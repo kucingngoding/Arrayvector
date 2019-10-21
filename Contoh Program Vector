@@ -1,0 +1,39 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package tesvector;
+import java.util.Scanner;
+import java.util.Vector;
+/**
+ *
+ * @author INDRA KP
+ */
+public class Tesvector {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Vector<String> tampung = new Vector<String>();
+        Scanner input = new Scanner(System.in);
+        System.out.print("Berapa angka kesukaan anda? ");
+        int angka = input.nextInt();
+         input.nextLine();
+        for (int i = 0; i< angka; i++) {
+//            System.out.println(" ");
+                       
+	 		System.out.print("Masukan mimpi anda\t: ");
+	 		String kode = input.nextLine();
+                        tampung.add(kode);
+        }
+        System.out.println(" ");
+        for ( int i = 0; i<tampung.size(); i++) {
+            System.out.println(" ");
+            System.out.println(tampung.get(i));
+        }
+    }
+    
+}

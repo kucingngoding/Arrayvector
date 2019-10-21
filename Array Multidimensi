@@ -1,0 +1,38 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package arraymultidimensi;
+
+/**
+ *
+ * @author INDRA KP
+ */
+public class Arraymultidimensi {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        String[][] masukin = {
+            {"Polisi", "110", "Indonesia"}, 
+            {"Ambulan", "118 / 119", "Indonesia"}, 
+            {"Ambulan,Polisi,Pemadam Kebakaran","911", "Amerika"}
+        };
+   
+        int i,j;
+        
+        for (i = 0; i < masukin.length; i++) {
+            for(j=0; j< masukin[i].length;) {
+                System.out.println("");
+                System.out.print("Instansi Darurat : " + masukin[i][j++] + " ");
+                System.out.print("Instansi Darurat : " + masukin[i][j++] + " ");
+                System.out.print("Instansi Darurat : " + masukin[i][j++] + "\n");
+            }
+        }
+               
+    }
+  }
+
